@@ -12,7 +12,7 @@
 ### [Dharma]()
 ### [Nishtha Atrey](https://www.linkedin.com/in/nishthaatrey/)
 ### [Rajat Dineshchandra Chaurasia](https://www.linkedin.com/in/chaurasiar/)
-### [Srinivas]()
+### [M S Srinivas](https://linkedin.com/in/mssrinivasbhargav/)
 
 #### Introduction
 
