@@ -48,6 +48,7 @@ var sql2 = "select count(party) as p,party from tweets where polarity<0 group by
 app.get('/', function(req,res) {
     console.log("Inside Get details");
 
+        //Get the positive polarity
         con.query(sql1, function (err, result) {
             if (err) {
                 res.writeHead(400, {
