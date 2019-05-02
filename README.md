@@ -21,6 +21,7 @@ In our project, we intend to analyze the sentiments of tweets related to the 201
 
 #### Demo Screenshots
 
+![alt text](./images/Kenisis.png "Data received on AWS Kenisis")
 ![alt text](./images/AWSQuickSight.png "AWS Quicksight Generated Visulization of Redshift data")
 ![alt text](./images/RDSDataLoading.png "Loading data from RDS")
 
