@@ -61,6 +61,7 @@ app.get('/', function(req,res) {
                 data.cp = result[1].p;
                 data.bp = result[0].p;
                 console.log("CP : ", data.cp);
+                //get the negative polarity
                 con.query(sql2, function (err, result) {
                     if (err) {
                         res.writeHead(400, {
@@ -73,6 +74,7 @@ app.get('/', function(req,res) {
                         data.cn = result[1].p;
                         data.bn = result[0].p;
                         console.log("CN : ", data.cn);
+                        //return the data found
                         res.writeHead(200, {
                             'Content-Type': 'text/plain'
                         })
