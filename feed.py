@@ -40,11 +40,27 @@ def congressThread():
 
 
 def bjpThread():
-    # ToDO
+    r = api.request('statuses/filter', {
+        'track': ['BJP', 'Modi', 'Mitron', 'Gujrat', 'Amit']
+    })
+    # r = api.request('search/tweets')
+    for tweet in r:
+        streamValue = {}
+        # print tweet['text']
+        cleanedTweet = clean_tweet(tweet['text'])
+        # print cleanedTweet
+        value = TextBlob(cleanedTweet)
+        if tweet['retweet_count'] == 0 and value.sentiment.polarity != 0:
+            streamValue['tweet'] = cleanedTweet
+            streamValue['polarity'] = value.sentiment.polarity
+            streamValue['party'] = "BJP"
+            data = json.dumps(streamValue)
+            data += '\n'
+            kinesis.put_record(StreamName="twitter",
+                               Data=data, PartitionKey="filler")
 
-    # twitter credentials
 
-
+# twitter credentials
 consumer_key = twitterCreds.consumer_key
 consumer_secret = twitterCreds.consumer_secret
 access_token_key = twitterCreds.access_token_key
