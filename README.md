@@ -9,7 +9,7 @@
 
 ##### Team Members
 ### [Aditya Doshatti](https://www.linkedin.com/in/aditya-doshatti)
-### [Dharma]()
+### [Dharma Dheeraj Chintala](https://www.linkedin.com/in/dharmadheeraj-chintala/)
 ### [Nishtha Atrey](https://www.linkedin.com/in/nishthaatrey/)
 ### [Rajat Dineshchandra Chaurasia](https://www.linkedin.com/in/chaurasiar/)
 ### [M S Srinivas](https://linkedin.com/in/mssrinivasbhargav/)
