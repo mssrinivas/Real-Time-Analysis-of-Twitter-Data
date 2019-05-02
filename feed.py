@@ -10,7 +10,7 @@ import threading
 def clean_tweet(tweet):
     ''' 
     Utility function to clean tweet text by removing links, special characters 
-    using simple regex statements. 
+    using simple regex statements and return the cleaned tweet. 
     '''
     return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
 
