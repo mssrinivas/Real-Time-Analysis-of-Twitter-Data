@@ -19,6 +19,10 @@
 The role of social media platforms like Twitter in politics has never been more prominent than it is now. Political scientists study how tweets translate into votes. We have seen Twitter play an important and decisive role in some of the major elections at the global stage. Presidential Elections in 2016 USA was a prominent example of this online phenomenon.
 In our project, we intend to analyze the sentiments of tweets related to the 2019 Indian (Lok Sabha) Elections. We will use tweet related data and analyze it in real time and perform some analysis on historical data as well to observe trends. We will make use of AWS services like EC2, Kinesis, RDS, Redshift, and Quicksight to stream, store and visualize the data.
 
+#### Demo Screenshots
+
+![alt text](./images/AWSQuickSight.png "AWS Quicksight Generated Visulization of Redshift data")
+
 #### Pre-requisites Set Up
 * Must have the AWS Access Key and Secret Key of AWS Account to be used to create the setup.
 * Must get access to the twiiter APIs by creating an APP in twitter.
