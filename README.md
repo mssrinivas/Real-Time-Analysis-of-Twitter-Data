@@ -20,10 +20,13 @@ The role of social media platforms like Twitter in politics has never been more 
 In our project, we intend to analyze the sentiments of tweets related to the 2019 Indian (Lok Sabha) Elections. We will use tweet related data and analyze it in real time and perform some analysis on historical data as well to observe trends. We will make use of AWS services like EC2, Kinesis, RDS, Redshift, and Quicksight to stream, store and visualize the data.
 
 #### Demo Screenshots
-
+![alt text](./images/Images-1.png "About the application")
+![alt text](./images/Images-2.png "Landing page of application")
+![alt text](./images/Images-3.png "Real time generated pie chart of sentimental data")
 ![alt text](./images/Kenisis.png "Data received on AWS Kenisis")
 ![alt text](./images/AWSQuickSight.png "AWS Quicksight Generated Visulization of Redshift data")
 ![alt text](./images/RDSDataLoading.png "Loading data from RDS")
+
 
 #### Pre-requisites Set Up
 * Must have the AWS Access Key and Secret Key of AWS Account to be used to create the setup.
