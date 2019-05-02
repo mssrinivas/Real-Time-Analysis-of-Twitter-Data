@@ -11,7 +11,23 @@ def congressThread():
     '''
     A separate Thread to query twitter for posts containing certain keywords and puts thyem into a kinesis stream
     '''
-
+    r = api.request('statuses/filter', {
+        'track' : ['Congress', 'Sonia' ,'Gandhi', 'Rahul', 'Pappu']
+     })
+      # r = api.request('search/tweets')
+    for tweet in r:
+      streamValue = {}
+      # print tweet['text']
+      cleanedTweet = clean_tweet(tweet['text'])
+      # print cleanedTweet
+      value = TextBlob(cleanedTweet)
+      if tweet['retweet_count'] == 0 and value.sentiment.polarity != 0:
+          streamValue['tweet'] = cleanedTweet
+          streamValue['polarity'] = value.sentiment.polarity
+          streamValue['party'] = "Congress"
+          data = json.dumps(streamValue)
+          data += '\n'
+          kinesis.put_record(StreamName="twitter", Data=data, PartitionKey="filler")
 
 def bjpThread():
     #ToDO
