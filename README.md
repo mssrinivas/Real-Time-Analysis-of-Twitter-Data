@@ -10,7 +10,7 @@
 ##### Team Members
 ### [Aditya Doshatti](https://www.linkedin.com/in/aditya-doshatti)
 ### [Dharma]()
-### [Nishtha]()
+### [Nishtha Atrey](https://www.linkedin.com/in/nishthaatrey/)
 ### [Rajat Dineshchandra Chaurasia](https://www.linkedin.com/in/chaurasiar/)
 ### [Srinivas]()
 
